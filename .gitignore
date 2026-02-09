@@ -12,7 +12,9 @@ node_modules
 dist
 dist-ssr
 *.local
-captures
+captures/
+**/captures/
+
 
 # Editor directories and files
 .vscode/*
@@ -24,6 +26,7 @@ captures
 *.njsproj
 *.sln
 *.sw?
-.venv
-venv
+.venv/
+venv/
 __pycache__
+**/temp/
