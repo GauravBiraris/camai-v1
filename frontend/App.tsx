@@ -15,7 +15,7 @@ const App: React.FC = () => {
 
   // 1. Fetch Monitors on Load
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/monitors')
+    fetch(ENDPOINTS.MONITORS)
       .then(res => res.json())
       .then(data => {
         console.log("Loaded Monitors:", data);

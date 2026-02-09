@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Clock, AlertTriangle, CheckCircle } from 'lucide-react';
+import { ENDPOINTS } from '../config';
 
 // Define the shape of a Log Entry based on your backend JSON
 interface LogEntry {
@@ -17,7 +18,7 @@ const LogsView: React.FC = () => {
   useEffect(() => {
     // Poll for logs every 5 seconds so user sees updates live
     const fetchLogs = () => {
-      fetch('http://127.0.0.1:5000/logs')
+      fetch(ENDPOINTS.LOGS)
         .then(res => res.json())
         .then(data => setLogs(data))
         .catch(err => console.error("Failed to fetch logs", err));

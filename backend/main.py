@@ -271,8 +271,29 @@ def run_scheduler():
             monitors = load_monitors()
             for m in monitors:
                 # 1. FILTER: Only process Active RTSP/Interval streams
-                if m.get('source') not in ['RTSP Stream', 'Upload Interval']:
+                if m.get('source') != 'RTSP Stream':
                     continue
+
+# 2. THE FIX: Check if this is a "Local Device" (0, 1) or a "Network Stream"
+                cam_id = m.get('connection_url', 0)
+                is_local_device = False
+                try:
+                    int(cam_id) # If it converts to int (0, 1), it's a local USB cam
+                    is_local_device = True
+                except:
+                    is_local_device = False # It's a string (rtsp://...)
+
+                # CRITICAL: If on Cloud, DO NOT touch local devices. 
+                # We assume a "Bridge" script is handling them.
+                if is_local_device:
+                    # Optional: Check if we haven't heard from the bridge in a while (Health check)
+                    # But DO NOT try cv2.VideoCapture(0) here.
+                    continue 
+
+                # 3. Handle Network Streams (RTSP)
+                # Only proceed if it looks like a real URL (rtsp:// or http://)
+                if isinstance(cam_id, str) and (cam_id.startswith('rtsp') or cam_id.startswith('http')):
+                    print(f"⏰ Checking Network Cam: {m['name']}...")
 
                 # 2. TIME CHECK LOGIC
                 interval_minutes = float(m.get('interval', 60))
@@ -461,7 +482,9 @@ def download_bridge_script(id):
 
     # Note: We use the Monitor ID as the "Token" so the backend knows which cam is pushing
     # Get the actual domain where this backend is running (localhost or Render)
-    current_host = request.host_url.rstrip('/')
+
+    api_base = os.getenv('PUBLIC_URL', request.url_root).rstrip('/')
+
     bridge_code = f"""
 import cv2
 import time
@@ -471,7 +494,7 @@ import sys
 
 # --- CONFIGURATION ---
 MONITOR_ID = "{monitor['id']}"
-API_URL = "{current_host}"   
+API_URL = "{api_base}"  
 # API_URL = "http://127.0.0.1:5000" # For local testing
 INTERVAL = {monitor.get('interval', 60)} * 60 # Convert minutes to seconds
 SOURCE_ID = "{monitor.get('connection_url', 0)}"

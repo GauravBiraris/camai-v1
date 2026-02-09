@@ -81,7 +81,7 @@ const CamerasView: React.FC<CamerasViewProps> = ({ monitors, onAddMonitor, onEdi
   const handleDelete = async (id: string) => {
     if (window.confirm('Are you sure you want to permanently delete this monitor?')) {
       try {
-        await fetch(`http://127.0.0.1:5000/monitors/${id}`, {
+        await fetch(`${ENDPOINTS.MONITORS}/${id}`, {
           method: 'DELETE'
         });
         onDeleteMonitor(id);
@@ -118,8 +118,8 @@ const handleDownloadBridge = (monitorId: string) => {
 
     // Determine URL and Method based on Edit vs Create
     const url = editingId 
-      ? `http://127.0.0.1:5000/monitors/${editingId}` 
-      : 'http://127.0.0.1:5000/monitors';
+      ? `${ENDPOINTS.MONITORS}/${editingId}`  
+      : ENDPOINTS.MONITORS ;
     const method = editingId ? 'PUT' : 'POST';
 
     try {
@@ -182,7 +182,7 @@ const handleDownloadBridge = (monitorId: string) => {
       }
 
       // Point this to Python Backend URL
-      const response = await fetch('http://127.0.0.1:5000/trigger-scan', {
+      const response = await fetch(`${ENDPOINTS.TRIGGER}`, {
         method: 'POST',
         body: formData,
       });
