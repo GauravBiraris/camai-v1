@@ -1,0 +1,5 @@
+{
+  "name": "Visual AI Monitor",
+  "description": "A comprehensive dashboard for monitoring visual AI agents, managing camera feeds, and analyzing real-time logs with specific parsers for Quantifiers, Detectors, and Process monitors.",
+  "requestFramePermissions": []
+}

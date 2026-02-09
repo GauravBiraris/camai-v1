@@ -1,0 +1,63 @@
+[
+  {
+    "id": "c486632b-0c33-4ad0-b784-a930246c1e9c",
+    "name": "Geba",
+    "type": "QUANTIFIER",
+    "source": "Upload Interval",
+    "rule": "Count the items",
+    "integrations": [
+      ""
+    ],
+    "status": "OK",
+    "last_update": "2026-02-09T10:02:35.836180",
+    "ideal_image_path": null,
+    "last_check_time": "2026-02-09T15:33:29.419679",
+    "connection_url": "0",
+    "interval": 59.9
+  },
+  {
+    "id": "49af6bfd-3024-4197-a5fb-5f120a66b9fb",
+    "name": "Geba1",
+    "type": "QUANTIFIER",
+    "source": "Upload Interval",
+    "rule": "Count the items",
+    "integrations": [
+      "",
+      "WhatsApp"
+    ],
+    "status": "OK",
+    "last_update": "2026-02-09T10:06:12.146938",
+    "ideal_image_path": null,
+    "last_check_time": "2026-02-09T15:32:49.351639"
+  },
+  {
+    "id": "be6efc5c-c846-47b1-821a-f3eb232c3e84",
+    "name": "Madhav",
+    "type": "QUANTIFIER",
+    "source": "RTSP Stream",
+    "connection_url": "0",
+    "rule": "",
+    "integrations": [
+      ""
+    ],
+    "status": "OK",
+    "last_update": "2026-02-09T13:37:47.985877",
+    "ideal_image_path": null,
+    "last_check_time": "2026-02-09T15:33:19.391438"
+  },
+  {
+    "id": "307613b2-f690-4a69-a235-7a7005ccec04",
+    "name": "Borse Ed",
+    "type": "QUANTIFIER",
+    "source": "RTSP Stream",
+    "connection_url": "0",
+    "rule": "",
+    "interval": 0.9,
+    "integrations": [
+      ""
+    ],
+    "status": "OK",
+    "last_update": "2026-02-09T15:07:06.940160",
+    "last_check_time": "2026-02-09T15:46:17.603985"
+  }
+]

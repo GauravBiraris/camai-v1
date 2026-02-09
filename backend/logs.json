@@ -1,0 +1,401 @@
+[
+  {
+    "id": "49d2c373-0ff5-4aea-ab10-2fffd1e64157",
+    "monitor_id": "c486632b-0c33-4ad0-b784-a930246c1e9c",
+    "monitor_name": "Geba",
+    "type": "QUANTIFIER",
+    "timestamp": "2026-02-09T14:33:33.900981",
+    "image_url": "http://127.0.0.1:5000/static/captures/49d2c373-0ff5-4aea-ab10-2fffd1e64157.jpg",
+    "result": {
+      "class": "QUANTIFIER",
+      "timestamp": "2024-05-23T14:15:00Z",
+      "overall_status": "OK",
+      "sections": [
+        {
+          "section_id": "subject_center",
+          "detected_content": "Person (Adult Male)",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "furniture_foreground",
+          "detected_content": "Sofa/Seating Unit",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "backdrop_left",
+          "detected_content": "Brown Curtain Panels",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        },
+        {
+          "section_id": "backdrop_right",
+          "detected_content": "Patterned White Curtain Panels",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "29926650-7d86-497b-8ea5-80c4685d2a1d",
+    "monitor_id": "be6efc5c-c846-47b1-821a-f3eb232c3e84",
+    "monitor_name": "Madhav",
+    "type": "QUANTIFIER",
+    "timestamp": "2026-02-09T14:33:14.338276",
+    "image_url": "http://127.0.0.1:5000/static/captures/29926650-7d86-497b-8ea5-80c4685d2a1d.jpg",
+    "result": {
+      "class": "QUANTIFIER",
+      "timestamp": "2024-05-24T14:30:15Z",
+      "overall_status": "OK",
+      "sections": [
+        {
+          "section_id": "center_foreground",
+          "detected_content": "Human Subject",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "left_background",
+          "detected_content": "Gold/Brown Curtains",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        },
+        {
+          "section_id": "right_background",
+          "detected_content": "Patterned White Curtains",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        },
+        {
+          "section_id": "lower_frame",
+          "detected_content": "Upholstered Furniture (Sofa)",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "81622219-7de1-44e1-8cf0-4b2c1d3f3359",
+    "monitor_id": "be6efc5c-c846-47b1-821a-f3eb232c3e84",
+    "monitor_name": "Madhav",
+    "type": "QUANTIFIER",
+    "timestamp": "2026-02-09T14:32:53.756395",
+    "image_url": "http://127.0.0.1:5000/static/captures/81622219-7de1-44e1-8cf0-4b2c1d3f3359.jpg",
+    "result": {
+      "class": "QUANTIFIER",
+      "timestamp": "2024-05-23T14:30:00Z",
+      "overall_status": "OK",
+      "sections": [
+        {
+          "section_id": "left_background",
+          "detected_content": "brown drape panel",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "main_background",
+          "detected_content": "white patterned curtain",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "central_foreground",
+          "detected_content": "human subject",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "lower_foreground",
+          "detected_content": "upholstered seating/couch",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "63e1c75f-045f-44d2-8a91-41c1e37f8405",
+    "monitor_id": "49af6bfd-3024-4197-a5fb-5f120a66b9fb",
+    "monitor_name": "Geba1",
+    "type": "QUANTIFIER",
+    "timestamp": "2026-02-09T14:32:45.170935",
+    "image_url": "http://127.0.0.1:5000/static/captures/63e1c75f-045f-44d2-8a91-41c1e37f8405.jpg",
+    "result": {
+      "class": "QUANTIFIER",
+      "timestamp": "2024-05-24T15:05:00Z",
+      "overall_status": "OK",
+      "sections": [
+        {
+          "section_id": "subject_center",
+          "detected_content": "Adult Male",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "background_left",
+          "detected_content": "Brown Drapes",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "background_main",
+          "detected_content": "Patterned White Curtains",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "foreground_base",
+          "detected_content": "Ornate Sofa Backrest",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "56d49d41-0ba2-4601-9bd5-3e37bd510039",
+    "monitor_id": "be6efc5c-c846-47b1-821a-f3eb232c3e84",
+    "monitor_name": "Madhav",
+    "type": "QUANTIFIER",
+    "timestamp": "2026-02-09T13:51:27.576192",
+    "image_url": "http://127.0.0.1:5000/static/captures/56d49d41-0ba2-4601-9bd5-3e37bd510039.jpg",
+    "result": {
+      "class": "QUANTIFIER",
+      "timestamp": "2024-05-24T10:30:00Z",
+      "overall_status": "OK",
+      "sections": [
+        {
+          "section_id": "wall_upper",
+          "detected_content": "analog wall clock",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "wall_mid",
+          "detected_content": "electrical switch panel",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "seating_foreground_left",
+          "detected_content": "upholstered armchair",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "seating_background",
+          "detected_content": "sofa units",
+          "strategy": "COUNT",
+          "ideal_value": 2,
+          "current_value": 2,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "surface_right",
+          "detected_content": "printed reading material",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "99f9876c-4779-4cf6-893b-ae24583474e0",
+    "monitor_id": "be6efc5c-c846-47b1-821a-f3eb232c3e84",
+    "monitor_name": "Madhav",
+    "type": "QUANTIFIER",
+    "timestamp": "2026-02-09T13:50:39.446170",
+    "image_url": "http://127.0.0.1:5000/static/captures/99f9876c-4779-4cf6-893b-ae24583474e0.jpg",
+    "result": {
+      "class": "QUANTIFIER",
+      "timestamp": "2024-05-23T12:00:00Z",
+      "overall_status": "OK",
+      "sections": [
+        {
+          "section_id": "foreground_center",
+          "detected_content": "person",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "seating_area",
+          "detected_content": "sofa",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        },
+        {
+          "section_id": "background_decor",
+          "detected_content": "curtains",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "95768e85-87c5-41f1-a397-a6012625526c",
+    "monitor_id": "be6efc5c-c846-47b1-821a-f3eb232c3e84",
+    "monitor_name": "Madhav",
+    "type": "QUANTIFIER",
+    "timestamp": "2026-02-09T13:49:35.142765",
+    "image_url": "http://127.0.0.1:5000/static/captures/95768e85-87c5-41f1-a397-a6012625526c.jpg",
+    "result": {
+      "class": "QUANTIFIER",
+      "timestamp": "2024-05-24T10:45:00Z",
+      "overall_status": "OK",
+      "sections": [
+        {
+          "section_id": "background_left",
+          "detected_content": "gold window curtains",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        },
+        {
+          "section_id": "background_right",
+          "detected_content": "patterned white curtains",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        },
+        {
+          "section_id": "central_subject",
+          "detected_content": "person",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "foreground_base",
+          "detected_content": "wooden sofa frame and red upholstery",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        }
+      ]
+    }
+  },
+  {
+    "id": "00d7adfc-2d95-4823-8451-2dca015bfb06",
+    "monitor_id": "be6efc5c-c846-47b1-821a-f3eb232c3e84",
+    "monitor_name": "Madhav",
+    "type": "QUANTIFIER",
+    "timestamp": "2026-02-09T13:49:14.974442",
+    "image_url": "http://127.0.0.1:5000/static/captures/00d7adfc-2d95-4823-8451-2dca015bfb06.jpg",
+    "result": {
+      "class": "QUANTIFIER",
+      "timestamp": "2024-05-24T14:30:00Z",
+      "overall_status": "OK",
+      "sections": [
+        {
+          "section_id": "foreground_subject",
+          "detected_content": "person",
+          "strategy": "COUNT",
+          "ideal_value": 1,
+          "current_value": 1,
+          "unit": "units",
+          "status": "OK"
+        },
+        {
+          "section_id": "background_left",
+          "detected_content": "brown curtain panel",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        },
+        {
+          "section_id": "background_right",
+          "detected_content": "patterned curtain panel",
+          "strategy": "ESTIMATE",
+          "ideal_value": 100,
+          "current_value": 100,
+          "unit": "percent",
+          "status": "OK"
+        }
+      ]
+    }
+  }
+]
