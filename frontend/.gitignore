@@ -1,0 +1,47 @@
+# --- General OS ---
+.DS_Store
+Thumbs.db
+*.log
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Python (Backend) ---
+backend/venv/
+backend/.venv/
+backend/__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Environment Variables (Critical Security) ---
+.env
+backend/.env
+frontend/.env
+*.env.local
+
+# --- Node.js (Frontend) ---
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Project Data & Media (Don't commit these) ---
+# Captures from cameras
+backend/static/captures/
+# Reference "Ideal State" images uploaded by users
+backend/static/references/
+
+# --- Local "Database" Files ---
+# These act as your DB. If you commit them, your local tests will overwrite production data.
+backend/monitors.json
+backend/logs.json
+
+# --- Bridge Scripts ---
+# Users generate these dynamically; we don't need to save them
+bridge_*.py
