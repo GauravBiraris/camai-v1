@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ENDPOINTS } from '../config';
 
 const AddMonitorModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ const AddMonitorModal = ({ isOpen, onClose }) => {
 
     try {
       // 2. Hit the Backend API
-      const response = await fetch('http://127.0.0.1:5000/test-rule', {
+      const response = await fetch(`${ENDPOINTS.TRIGGER}`, {
         method: 'POST',
         body: data,
       });
