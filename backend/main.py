@@ -206,7 +206,7 @@ def analyze_detector(image_bytes, user_rule):
 # --- HELPER: Logic for PROCESS MONITOR ---
 def analyze_process(image_bytes, user_rule):
     # System Instruction from your uploaded file 
-    sys_instruction = """You are a Process Supervisor. Compare 'Current Image' with 'Start/Previous State' to estimate progress.
+    sys_instruction = """You are a Process Supervisor. Compare 'Current Image' with 'Start/Ideal/Previous State' implied in User Rules to estimate progress. If no 'Start/Ideal/Previous State' is provided, infer the stage based on standard industry expectations for this process.
     
     Output strictly in JSON:
     {
@@ -239,7 +239,6 @@ def analyze_process(image_bytes, user_rule):
 def send_notification(integrations, message):
     """
     Sends alerts based on user selection.
-    For Hackathon: Print to console allows judges to see it works.
     """
     timestamp = datetime.now().strftime("%H:%M:%S")
 
